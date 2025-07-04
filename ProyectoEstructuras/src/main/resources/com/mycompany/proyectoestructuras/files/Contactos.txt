@@ -25,3 +25,5 @@ compania,WebCore,,2525252525,Calle Wamba,Guayaquil,contacto@webcore.com,Ecuador,
 person,Ximena,Xavier,2626262626,Calle Xilófono,Guayaquil,ximena.xavier@example.com,Ecuador
 compania,YellowSystems,,2727272727,Calle Yuca,Guayaquil,info@yellowsystems.com,Ecuador,1000000013,www.yellowsystems.com
 person,Zoe,Zambrano,2828282828,Calle Zafiro,Guayaquil,zoe.zambrano@example.com,Ecuador
+person,dsfas,dsfsd,fdsfsa,dfsfsa,sdafsadf,dfsa,dsf
+

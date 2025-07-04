@@ -9,7 +9,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class App extends Application {
-    public static String pathFiles="src/main/resources/com/mycompany/proyectoestructuras/files/";
+    public static String pathFiles="ProyectoEstructuras/src/main/resources/com/mycompany/proyectoestructuras/files/";
     private static Scene scene;
 
     @Override

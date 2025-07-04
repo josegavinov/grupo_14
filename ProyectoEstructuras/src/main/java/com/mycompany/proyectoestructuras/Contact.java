@@ -7,6 +7,8 @@ import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 
 public abstract class Contact implements Comparable<Contact> {
     private String name;
@@ -76,7 +78,14 @@ public abstract class Contact implements Comparable<Contact> {
     
 public static MyArrayList<Contact> cargarContactos(String fileName) {
     MyArrayList<Contact> contactos = new MyArrayList<>(Contact.class);
-    try (BufferedReader br = new BufferedReader(new FileReader("ProyectoEstructuras/src/main/resources/com/mycompany/proyectoestructuras/files/Contactos.txt"))) {
+    try (InputStream input = App.class.getResourceAsStream("/com/mycompany/proyectoestructuras/files/Contactos.txt")) {
+
+        if (input == null) {
+            System.out.println("No se encontró el archivo de contactos.");
+            return contactos;
+        }
+
+        BufferedReader br = new BufferedReader(new InputStreamReader(input));
         String linea;
         while ((linea = br.readLine()) != null) {
             linea = linea.trim();
