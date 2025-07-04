@@ -76,7 +76,7 @@ public abstract class Contact implements Comparable<Contact> {
     
 public static MyArrayList<Contact> cargarContactos(String fileName) {
     MyArrayList<Contact> contactos = new MyArrayList<>(Contact.class);
-    try (BufferedReader br = new BufferedReader(new FileReader(App.pathFiles + fileName))) {
+    try (BufferedReader br = new BufferedReader(new FileReader("ProyectoEstructuras/src/main/resources/com/mycompany/proyectoestructuras/files/Contactos.txt"))) {
         String linea;
         while ((linea = br.readLine()) != null) {
             linea = linea.trim();
